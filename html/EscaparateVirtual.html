@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>The Diamond Lounge</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="EscaparateVirtual.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="fondologo">
+            <img src="../imagenes/logo.png" alt="logo" height="60" width="60">
+        </div>
+        <input id="browser" type="text" placeholder="¿Qué desea buscar?" />
+        <img id="browser2" src="../imagenes/browser.png" alt="browser2" height="50" width="50">
+        <img src="../imagenes/signin.png" id="signin" alt="signin" height="50" width="50">
+        <img src="../imagenes/location.png" id="location" alt="location" height="50" width="50">
+        <img src="../imagenes/basket.png" alt="basket" height="50" width="50">
+    </header>
+
+    <!-- Hago una separación del header y el resto de la página para poder hacer correctamente el header con posición fija -->
+    <div id="main">
+
+        <nav>
+            <img id="imgcateg" src="../imagenes/menu.png" alt="menu" height="40" width="40">
+            <p id="parr1">Categorias</p>
+            <ul id="categcontent" class="dropdown">
+                <li><a href="">Ropa</a></li>
+                <li><a href="">Cine y TV</a></li>
+                <li><a href="">Música</a></li>
+                <li><a href="">Tecnología</a></li>
+                <li><a href="">Videojuegos</a></li>
+                <li><a href="">Juguetes</a></li>
+                <li><a href="">Hogar y Mascotas</a></li>
+                <li><a href="">Alimentación</a></li>
+                <li><a href="">Salud</a></li>
+                <li><a href="">Vehiculos</a></li>
+                <li><a href="">Joyería y accesorios</a></li>
+                <li><a href="">Deportes</a></li>
+                <li><a href="">Electrodomésticos</a></li>
+            </ul>
+            <div id="menu">
+                <a class="opc">Más vendidos</a>
+                <a class="opc">Novedades</a>
+                <a class="opc">Ofertas</a>
+                <a class="opc">Premium</a>
+                <a class="opc">Otros</a>
+            </div>
+        </nav>
+
+        <section>
+            <!-- Uso la etiqueta object para poder importar el banner creado por mi -->
+            <object class="banner1" id="sales" data="../banner/banner.html" height="400" width="850"></object>
+            <img class="banner2" src="../imagenes/banner2.jpg" alt="banner2" height="400" width="850">
+            <img class="banner3" src="../imagenes/banner3.jpg" alt="banner2" height="400" width="850">
+            <img class="banner4" src="../imagenes/banner4.jpg" alt="banner2" height="400" width="850">
+            <div id="productsmain">
+                <h1>Recomendado para ti</h1>
+                <div class="products fade conttype1">
+                    <div class="contimg">
+                        <img class="zoom" src="../imagenes/product1.webp" alt="product1" height="280"><br>
+                    </div>
+                    <a href="">La Liga de la Justicia de Zack Snyder [Blu-Ray]</a>
+                    <p class="stars">4/5</p>
+                    <p class="price">19.99</p>
+                </div>
+
+                <div class="products fade conttype1">
+                    <div class="contimg">
+                        <img class="zoom" src="../imagenes/product2.PNG" alt="product2" height="280"><br>
+                    </div>
+                    <a href="">Robot Aspirador CECOTEC Conga 1990</a>
+                    <p class="stars">4.5/5</p>
+                    <p class="price">119.99</p>
+                </div>
+
+                <div class="products fade conttype1">
+                    <div class="contimg">
+                        <img class="zoom" src="../imagenes/product3.PNG" alt="product3" height="280"><br>
+                    </div>
+                    <a href="">Zapatillas PUMA Smash</a>
+                    <p class="stars">4.5/5</p>
+                    <p class="price">29.99</p>
+                </div>
+
+                <div class="products fade conttype2">
+                    <div class="contimg">
+                        <img class="zoom" src="../imagenes/product4.webp" alt="product4" height="320"><br>
+                    </div>
+                    <a href="">Assassin's Creed Valhalla [Xbox Series X]</a>
+                    <p class="stars">3.5/5</p>
+                    <p class="price">49.99</p>
+                </div>
+
+                <div class="products fade conttype2">
+                    <div class="contimg">
+                        <img class="zoom" src="../imagenes/product5.PNG" alt="product5" height="320"><br>
+                    </div>
+                    <a href="">Horno eléctrico Candy Smart FCS100</a>
+                    <p class="stars">4.5/5</p>
+                    <p class="price">129.99</p>
+                </div>
+
+                <div class="products fade conttype2">
+                    <div class="contimg">
+                        <img class="zoom" src="../imagenes/product6.PNG" alt="product6" height="320"><br>
+                    </div>
+                    <a href="">Caja de 20 mascarillas FP2</a>
+                    <p class="stars">4/5</p>
+                    <p class="price">9.99</p>
+                </div>
+
+                <div class="products fade conttype3">
+                    <div class="contimg">
+                        <img class="zoom" src="../imagenes/product7.PNG" alt="product7" height="260"><br><br>
+                    </div>
+                    <a href="">PlayStation 5</a>
+                    <p class="stars">5/5</p>
+                    <p class="price">349.99</p>
+                </div>
+
+                <div class="products fade conttype3">
+                    <div class="contimg">
+                        <img class="zoom" src="../imagenes/product8.PNG" alt="product8" height="260"><br><br>
+                    </div>
+                    <a href="">Auriculares Logitech Gaming G432</a>
+                    <p class="stars">4.5/5</p>
+                    <p class="price">39.99</p>
+                </div>
+            </div>
+
+            <div id="sequia">
+                <h2 class="fade">RECUERDA: El 5% de tus compras se dedica a zonas afectadas por la sequía</h2>
+                <img class="fade" src="../img/desierto.jpg" alt="desierto" height="400" width="33%">
+                <img class="fade" src="../img/sequia1.jpg" alt="sequia1t" height="400" width="33%">
+                <img class="fade" src="../img/sequia2.jpg" alt="sequia2" height="400" width="33%">
+                <video class="fade" height="400" width="33%" poster="video/postervideo.jpg" controls>
+                    <source src="../video/TemperaturaYprecepitaciónSigloXXI.mp4">
+                    Tu navegador no soporta este elemento video
+                </video>
+            </div>
+        </section>
+
+        <footer>
+            <div class="links fade">
+                <a href="">Empresa</a>
+                <a href="">Atención al cliente</a>
+                <a href="">Aviso Legal</a>
+                <a href="">Privacidad</a>
+            </div>
+
+            <div class="links fade">
+                <a href="">Condiciones de uso</a>
+                <a href="">Condiciones de venta</a>
+                <a href="">Derechos de uso</a>
+                <a href="">Política COVID-19</a>
+            </div>
+
+            <div id="social">
+                <img class="fade" src="../imagenes/facebook.png" alt="facebook" height="50">
+                <img class="fade" src="../imagenes/instagram.png" alt="instagram" height="55">
+                <img class="fade" src="../imagenes/twitter.png" alt="twitter" height="45">
+                <img class="fade" src="../imagenes/youtube.png" alt="youtube" height="55">
+            </div>
+
+            <button class="fade" onclick="goTop()" id="topButton"><img src="../imagenes/gotop.png" alt="goTop"
+                    height="80"></button>
+
+            <audio class="fade" controls autoplay>
+                <source src="../audio/CreativeCommonSong.mp3">
+                Tú navegador no soporta este elemento audio
+            </audio>
+        </footer>
+
+    </div>
+</body>
+
+<script>
+    // He usado un JavaScript simple para darle comportamiento al botón de regresar al inicio de la página
+    function goTop() {
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="EscaparateVirtual.js"></script>
+
+</html>

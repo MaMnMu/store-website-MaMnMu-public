@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>The Diamond Lounge</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="EscaparateVirtual.css">
+</head>
+
+<body>
+
+    <header>
+        <a id="idioma" href=""><img src="../imagenes/idioma.jpg" alt="La página está en idioma español" height="25" width="50"></a>
+        <div id="fondologo">
+            <a href=""><img src="../imagenes/logo.png" alt="Logo de The Diamond Lounge" height="60" width="60"></a>
+        </div>
+        <input list="sugerencias" id="browser" type="text" placeholder="¿Qué desea buscar?" />
+        <!-- Usamos un datalist con posibles sugerencias en el buscador -->
+        <datalist id="sugerencias">
+            <option value="Mesas"></option>
+            <option value="Sillas"></option>
+            <option value="Videojuegos"></option>
+            <option value="Libros"></option>
+            <option value="Ordenadores"></option>
+            <option value="Muebles"></option>
+            <option value="Impresoras"></option>
+            <option value="Coches"></option>
+            <option value="Material escolar"></option>
+            <option value="Motos"></option>
+            <option value="Papeleria"></option>
+            <option value="Viajes"></option>
+            <option value="Licencias"></option>
+            <option value="Suscripciones"></option>
+            <option value="Peliculas"></option>
+            <option value="Premium"></option>
+            <option value="Cuadros"></option>
+            <option value="Tecnologia"></option>
+            <option value="Televisiones"></option>
+            <option value="Cocina"></option>
+            <option value="Ropa"></option>
+        </datalist>
+        <a id="browser2" href=""><img src="../imagenes/browser.png" alt="Botón de búsqueda" height="35" width="35"></a>
+        <a href="" id="signin">
+            <img src="../imagenes/signin.png" alt="Iniciar sesión" height="50" width="50">
+            <p>Iniciar sesión</p>
+        </a>
+        <a href="" id="location">
+            <img src="../imagenes/location.png" alt="Permitir compartir tu ubicación" height="50" width="50">
+            <p>Compartir ubicación</p>
+        </a>
+        <a href="">
+            <img src="../imagenes/basket.png" alt="Carrito de la compra" height="50" width="50">
+            <p>Carrito de compras</p>
+        </a>
+    </header>
+
+    <!-- Hago una separación del header y el resto de la página para poder hacer correctamente el header con posición fija -->
+    <div id="main">
+        <nav>
+            <a id="imgcateg" href=""><img src="../imagenes/menu.png" alt="Desplegable de menú de categorías" height="40" width="40"></a>
+            <p id="parr1">Categorias</p>
+            <ul id="categcontent" class="dropdown">
+                <li><a href="">Ropa</a></li>
+                <li><a href="">Cine y TV</a></li>
+                <li><a href="">Música</a></li>
+                <li><a href="">Tecnología</a></li>
+                <li><a href="">Videojuegos</a></li>
+                <li><a href="">Juguetes</a></li>
+                <li><a href="">Hogar y Mascotas</a></li>
+                <li><a href="">Alimentación</a></li>
+                <li><a href="">Salud</a></li>
+                <li><a href="">Vehiculos</a></li>
+                <li><a href="">Joyería y accesorios</a></li>
+                <li><a href="">Deportes</a></li>
+                <li><a href="">Electrodomésticos</a></li>
+            </ul>
+            <div id="menu">
+                <a href="" class="opc">Más vendidos</a>
+                <a href="" class="opc">Novedades</a>
+                <a href="" class="opc">Ofertas</a>
+                <a href="" class="opc">Premium</a>
+                <a href="" class="opc">Otros</a>
+            </div>
+        </nav>
+
+        <section>
+            <!-- Uso la etiqueta object para poder importar el banner creado por mi -->
+            <a id="sales" class="banner1" href=""><object data="../banner/banner.html" alt="Banner de ofertas Navideñas" height="400" width="850" longdesc="#banner1desc"></object></a>
+            <!-- Usamos longdesc para los banners para poder dar más información sobre estos a las personas con visibilidad limitada -->
+            <span id="banner1desc" class="sronly">
+                Al clickar en este banner podrás acceder a las ofertas navideñas de The Diamond Lounge que tenemos preparadas para nuestros clientes, una gran variedad de productos como libros, tecnología, películas y mucho más.
+                No te lo pierdas.
+            </span>
+            <a class="banner2" href=""><img src="../imagenes/banner2.jpg" alt="Banner de nuevos productos a la venta" height="400" width="850" longdesc="#banner2desc"></a>
+            <span id="banner2desc" class="sronly">
+                Recientemente hemos añadido una gran gama de productos a distintas categorías de nuestra tienda. Si deseas consultar todos estos nuevos productos y estar a la moda, pincha en este banner.
+            </span>
+            <a class="banner3" href=""><img src="../imagenes/banner3.jpg" alt="Banner de descuentos en zapatillas" height="400" width="850" longdesc="#banner3desc"></a>
+            <span id="banner3desc" class="sronly">
+                Gracias a nuestras asociaciones con muchas marcas, podemos ofrecerte unos descuentos del 50% en zapatillas durante las próximas 2 semanas. No tardes que nos las quitan de las manos. Si quieres verlas, pincha en este banner.
+            </span>
+            <a class="banner4" href=""><img src="../imagenes/banner4.jpg" alt="Banner de ofertas de San Valentín" height="400" width="850" longdesc="#banner4desc"></a>
+            <span id="banner4desc" class="sronly">
+                ¿No sabés que regarle a esa persona que quieres tanto? Pues no te preocupes porque hemos hecho una selección de los mejores productos para este San Valentín y además muchos están de oferta. Clicka aquí para verlos.
+            </span>
+            <div id="productsmain">
+                <h1>Recomendado para ti</h1>
+                <div class="products fade conttype1">
+                    <div class="contimg">
+                        <img class="zoom" src="../imagenes/product1.webp" alt="Carátula del Blu-Ray de la película Liga de la Justicia" height="280"><br>
+                    </div>
+                    <a href="">La Liga de la Justicia de Zack Snyder [Blu-Ray]</a>
+                    <p class="stars">4/5</p>
+                    <p class="price">19.99</p>
+                </div>
+
+                <div class="products fade conttype1">
+                    <div class="contimg">
+                        <img class="zoom" src="../imagenes/product2.PNG" alt="Robot Aspirador CECOTEC Conga 1990" height="280"><br>
+                    </div>
+                    <a href="">Robot Aspirador CECOTEC Conga 1990</a>
+                    <p class="stars">4.5/5</p>
+                    <p class="price">119.99</p>
+                </div>
+
+                <div class="products fade conttype1">
+                    <div class="contimg">
+                        <img class="zoom" src="../imagenes/product3.PNG" alt="Zapatillas PUMA Smash" height="280"><br>
+                    </div>
+                    <a href="">Zapatillas PUMA Smash</a>
+                    <p class="stars">4.5/5</p>
+                    <p class="price">29.99</p>
+                </div>
+
+                <div class="products fade conttype2">
+                    <div class="contimg">
+                        <img class="zoom" src="../imagenes/product4.webp" alt="Videojuego Assassin's Creed Valhalla para la consola Xbox Series X" height="320"><br>
+                    </div>
+                    <a href="">Assassin's Creed Valhalla [Xbox Series X]</a>
+                    <p class="stars">3.5/5</p>
+                    <p class="price">49.99</p>
+                </div>
+
+                <div class="products fade conttype2">
+                    <div class="contimg">
+                        <img class="zoom" src="../imagenes/product5.PNG" alt="Horno eléctrico Candy Smart FCS100" height="320"><br>
+                    </div>
+                    <a href="">Horno eléctrico Candy Smart FCS100</a>
+                    <p class="stars">4.5/5</p>
+                    <p class="price">129.99</p>
+                </div>
+
+                <div class="products fade conttype2">
+                    <div class="contimg">
+                        <img class="zoom" src="../imagenes/product6.PNG" alt="Caja con 20 mascarillas FP2" height="320"><br>
+                    </div>
+                    <a href="">Caja con 20 mascarillas FP2</a>
+                    <p class="stars">4/5</p>
+                    <p class="price">9.99</p>
+                </div>
+
+                <div class="products fade conttype3">
+                    <div class="contimg">
+                        <img class="zoom" src="../imagenes/product7.PNG" alt="Videoconsola PlayStation 5" height="260"><br><br>
+                    </div>
+                    <a href="">PlayStation 5</a>
+                    <p class="stars">5/5</p>
+                    <p class="price">349.99</p>
+                </div>
+
+                <div class="products fade conttype3">
+                    <div class="contimg">
+                        <img class="zoom" src="../imagenes/product8.PNG" alt="Auriculares Logitech Gaming G432" height="260"><br><br>
+                    </div>
+                    <a href="">Auriculares Logitech Gaming G432</a>
+                    <p class="stars">4.5/5</p>
+                    <p class="price">39.99</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="links fade">
+                <a href="">Sobre Nosotros</a>
+                <a href="">Atención al cliente</a>
+                <a href="">Preguntas y Respuestas</a>
+                <a href="">Aviso Legal</a>
+                <a href="">Privacidad</a>
+            </div>
+
+            <div class="links fade">
+                <a href="">Suscríbete a nuestro Boletín semanal</a>
+                <a href="">Condiciones de uso</a>
+                <a href="">Condiciones de venta</a>
+                <a href="">Derechos de uso</a>
+                <a href="">Política COVID-19</a>
+            </div>
+
+            <div id="social">
+                <a href="">
+                    <img class="fade" src="../imagenes/facebook.png" alt="Acceso al Facebook de The Diamond Lounge" height="50">
+                    <p>Facebook</p>
+                </a>
+                <a href="">
+                    <img class="fade" src="../imagenes/instagram.png" alt="Acceso al Instagram de The Diamond Lounge" height="55">
+                    <p>Instagram</p>
+                </a>
+                <a href="">
+                    <img class="fade" src="../imagenes/twitter.png" alt="Acceso al Twitter de The Diamond Lounge" height="45">
+                    <p>Twitter</p>
+                </a>
+                <a href="">
+                    <img class="fade" src="../imagenes/youtube.png" alt="Acceso al Youtube de The Diamond Lounge" height="55">
+                    <p>Youtube</p>
+                </a>
+            </div>
+
+            <button class="fade" onclick="goTop()"><img src="../imagenes/gotop.png" id="topButton" alt="Botón para volver a lo alto de la página" height="80"></button>
+    </div>
+</body>
+
+<script>
+    // He usado un JavaScript simple para darle comportamiento al botón de regresar al inicio de la página
+    function goTop() {
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="EscaparateVirtual.js"></script>
+
+</html>
